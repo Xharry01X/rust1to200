@@ -1,0 +1,6 @@
+[package]
+name = "rust1to200"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
