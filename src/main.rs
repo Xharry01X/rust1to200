@@ -2,6 +2,7 @@
 
 
 fn main() {
-    let a = "Hello";
+    let mut a = 5;
+    a += 5;
     println!("{}",a);
 }
