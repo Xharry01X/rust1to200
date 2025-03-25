@@ -2,7 +2,9 @@
 
 
 fn main() {
-    let mut a = 5;
-    a += 5;
-    println!("{}",a);
+    let x =5;
+    println!("{}",x);
+
+    let x = x + 1; //shadowing the original value of x
+    println!("Shadow x: {}", x);
 }
