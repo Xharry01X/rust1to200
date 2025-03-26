@@ -2,13 +2,18 @@
 
 fn main(){
 
-    let my_tuple: (i32, f64, &str) = (42,3.14, "hello");
+    let numbers: [i32; 5] = [10,20,30,40,50];
 
+    print_length(&numbers);
 
-    println!("First element: {}", my_tuple.0);
-    println!("Second element: {}",my_tuple.1);
-    println!("Third element: {}",my_tuple.2);
+    print_content(&numbers);
 
-    let (a,b,c) = my_tuple;
-    println!("Desturcted: {} {} {}",a,b,c);                                                                                                                                                           
+}
+
+fn print_length(arr: &[i32]){
+      println!("Array size is: {}",arr.len());
+}
+
+fn print_content(arr: &[i32]){
+    println!("Arrays contents is: {:?}",arr);
 }
