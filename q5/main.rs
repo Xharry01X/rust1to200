@@ -1,13 +1,14 @@
-fn main() {
-    for i in 1..=100 {
-        if i % 15 == 0 {
-            println!("FizzBuzz");
-        } else if i % 3 == 0 {
-            println!("Fizz");
-        } else if i % 5 == 0 {
-            println!("Buzz");
-        } else {
-            println!("{}", i);
+fn main (){
+
+    let numbers = [-10,3,5,-33,0];
+
+    for number in numbers {
+        if number < 0 {
+            println!("{} is negative",number);
+        } else if number > 0 {
+            println!("{} This is positive",number);
+        }else {
+            println!("{} number is zero",number);
         }
     }
 }
