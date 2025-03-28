@@ -1,16 +1,12 @@
 // loops concept
 
 fn main(){
-  let mut i = 1;
-
   
-   loop {
-    println!("{}",i);
-    i += 1;
-
-    if i > 100 {
-        break;
+for i in 1..=50 {
+    if i % 2 == 0 {
+        println!("{} This number is even",i);
+    } else {
+        println!("{} This number is odd",i);
     }
-
-   }
+}
 }
