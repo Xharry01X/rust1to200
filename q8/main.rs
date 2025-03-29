@@ -1,7 +1,7 @@
 
 
 fn main(){
+  let add = |a,b| a / b;
 
-    let greet = || println!("Hello world!");
-    greet();
+  println!("The sum is {}",add(14 , 7));
 }
