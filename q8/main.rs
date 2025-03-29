@@ -1,7 +1,8 @@
 
 
 fn main(){
-  let add = |a,b| a / b;
+  let x = 5;
+  let add_x = |y| x + y;
 
-  println!("The sum is {}",add(14 , 7));
+  println!("Capturing value of x {}", add_x(3));
 }
